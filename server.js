@@ -7,3 +7,5 @@ const APP = EXPRESS();
 const PORT = process.env.PORT || 3000;
 
 APP.use(EXPRESS.static('public'));
+
+APP.listen(PORT, function(){`You are on port ${PORT}`});
